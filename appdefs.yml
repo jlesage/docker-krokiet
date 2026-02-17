@@ -1,0 +1,57 @@
+---
+
+#
+# Definitions for Krokiet docker container.
+#
+# This file is used as data source to generate README.md and unRAID template files
+# from Jinja2 templates.
+#
+
+app:
+  id: 37
+  name: krokiet
+  friendly_name: Krokiet
+  gui_type: x11
+  base_os: alpine
+  project:
+    description: |-
+      Krokiet is the new generation GUI frontend for Cakawka, written in Rust,
+      simple, fast and easy to use app to remove unnecessary files from your
+      computer.
+    url: https://github.com/qarmin/czkawka
+  unraid:
+    #support_url: https://forums.unraid.net/topic/XXXXXX-support-krokiet/
+    category: "Tools:"
+  documentation:
+    sections:
+      - title: Trash Directory
+        level: 2
+        content: |-
+         When trash usage is enabled in {{ app.friendly_name }} settings, deleted files are
+         moved to the trash directory located at `/config/xdg/data/Trash` inside the
+         container.
+
+         > [!NOTE]
+         > Using the trash may be slower than permanent deletion, especially for large
+         > files, because the operation involves copying the file to the trash directory
+         > before removing the original.
+  changelog:
+    - version: 26.02.1
+      date: 2026-02-17
+      changes:
+        - 'Initial release.'
+
+container:
+  storage_permissions: rw
+
+  # Environment variables.
+  environment_variables: []
+
+  # Volumes
+  volumes: []
+
+  # Network ports
+  ports: []
+
+  # Devices
+  devices: []
