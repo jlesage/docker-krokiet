@@ -8,7 +8,7 @@
 ARG DOCKER_IMAGE_VERSION=
 
 # Define software versions.
-ARG KROKIET_VERSION=11.0.0
+ARG KROKIET_VERSION=11.0.1
 ARG LIBHEIF_VERSION=1.21.2
 
 # Define software download URLs.

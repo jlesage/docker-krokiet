@@ -166,7 +166,6 @@ echo "codegen-units = 1" >> /tmp/krokiet/.cargo/config.toml
 
 log "Patching Krokiet..."
 PATCHES="
-    excluded-dir-warning-fix.patch
     container-trash.patch
     dark-theme.patch
     disable-trash-by-default.patch
