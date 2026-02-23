@@ -36,6 +36,13 @@ app:
          > files, because the operation involves copying the file to the trash directory
          > before removing the original.
   changelog:
+    - version: 26.02.2
+      date: 2026-02-22
+      changes:
+        - 'Updated Krokiet to version 11.0.1.'
+        - 'Updated baseimage to version 4.11.2, bringing the following changes'
+        - '2:Fixed issue where taking ownership of directory would fail.'
+        - '2:Fixed X server failing to find the appropriate Mesa driver on some setups.'
     - version: 26.02.1
       date: 2026-02-17
       changes:
