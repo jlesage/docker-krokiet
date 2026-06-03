@@ -86,10 +86,6 @@ RUN \
     set-cont-env DOCKER_IMAGE_VERSION "$DOCKER_IMAGE_VERSION" && \
     true
 
-# Set public environment variables.
-ENV \
-    KROKIET_GUI_KROKIET=0
-
 # Define mountable directories.
 VOLUME ["/storage"]
 
