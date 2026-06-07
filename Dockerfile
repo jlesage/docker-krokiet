@@ -31,7 +31,7 @@ RUN xx-verify \
     /tmp/krokiet-install/krokiet
 
 # Pull base image.
-FROM jlesage/baseimage-gui:alpine-3.20-v4.12.3
+FROM jlesage/baseimage-gui:alpine-3.20-v4.12.4
 
 # Define working directory.
 WORKDIR /tmp
