@@ -8,7 +8,7 @@ export CXX=xx-clang++
 
 export RUSTFLAGS="-C link-args=-Wl,-zstack-size="8388608
 
-KROKIET_FEATURES="container_trash,heif,libraw"
+KROKIET_FEATURES="container_trash,heif,libraw,libavif"
 
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 
@@ -48,6 +48,7 @@ xx-apk --no-cache --no-scripts add \
     musl-dev \
     gcc \
     libstdc++-dev \
+    dav1d-dev \
 
 # For libheif.
 xx-apk --no-cache --no-scripts add \
@@ -168,7 +169,6 @@ log "Patching Krokiet..."
 PATCHES="
     container-trash.patch
     dark-theme.patch
-    disable-trash-by-default.patch
 "
 for PATCH in $PATCHES; do
     log "Applying $PATCH..."

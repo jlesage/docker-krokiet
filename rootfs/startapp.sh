@@ -1,5 +1,7 @@
 #!/bin/sh
 
+export SLINT_BACKEND=winit-software
+
 cd /storage
 exec /usr/bin/krokiet
 

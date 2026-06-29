@@ -47,8 +47,8 @@
      let show_only_icons = settings.get_show_only_icons();
  
      let settings_load_tabs_sizes_at_startup = settings.get_load_tabs_sizes_at_startup();
---- a/krokiet/ui/settings_list.slint
-+++ b/krokiet/ui/settings_list.slint
+--- a/krokiet/ui/screens/settings_list.slint
++++ b/krokiet/ui/screens/settings_list.slint
 @@ -278,14 +278,6 @@ export component SettingsList inherits VerticalLayout {
                  height: SettingsSize.item_height;
              }
