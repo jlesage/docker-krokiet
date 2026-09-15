@@ -36,6 +36,10 @@ app:
          > files, because the operation involves copying the file to the trash directory
          > before removing the original.
   changelog:
+    - version: 26.09.1
+      date: 2026-09-15
+      changes:
+        - 'Updated Krokiet to version 12.0.2.'
     - version: 26.08.2
       date: 2026-08-17
       changes:
